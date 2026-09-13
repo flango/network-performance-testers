@@ -54,6 +54,7 @@ done
 echo "========================================================="
 
 ```
+Printout example
 ```ini
 =========================================================
        FULL ROUND-TRIP NETWORK PERFORMANCE TESTER
@@ -119,6 +120,7 @@ done
 echo "==============================================="
 
 ```
+Printout example
 ```ini
 ===============================================
    NETWORK LATENCY & ROUTING IMPACT TESTER
@@ -179,6 +181,7 @@ done
 echo "========================================================="
 
 ```
+Printout example
 ```ini
 =========================================================
         ADVANCED NETWORK LAYER PERFORMANCE TESTER
