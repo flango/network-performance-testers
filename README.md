@@ -6,7 +6,7 @@ Network Full Round-Trip (DNS + Transit) Performance Tester
 Network Latency Tester
 Network Latency Breakdown
 
-###Network Full Round-Trip (DNS + Transit) Performance Tester
+### Network Full Round-Trip (DNS + Transit) Performance Tester
 ```bash
 nano latency.roundtrip.sh
 ```
@@ -54,7 +54,7 @@ done
 echo "========================================================="
 
 ```
-###
+### Network Latency Tester
 ```bash
 nano latency.ping.sh
 ```
@@ -105,7 +105,7 @@ done
 echo "==============================================="
 
 ```
-###
+### Network Latency Breakdown
 ```bash
 nano latency.advanced.sh
 ```
