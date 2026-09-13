@@ -2,9 +2,9 @@
 linux network performance testers
 
 ## Features
-Network Full Round-Trip (DNS + Transit) Performance Tester
-Network Latency Tester
-Network Latency Breakdown
+* **Network Full Round-Trip (DNS + Transit) Performance Tester
+* **Network Latency Tester
+* **Network Latency Breakdown
 
 ### Network Full Round-Trip (DNS + Transit) Performance Tester
 ```bash
