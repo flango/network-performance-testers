@@ -224,3 +224,10 @@ Printout example
  
 =========================================================
 ```
+
+---
+
+## 📄 License
+
+This project is open-source and licensed under the **MIT License**. Feel free to use, modify, and distribute it as you see fit. See the accompanying `LICENSE` file for full legal details.
+
