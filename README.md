@@ -54,6 +54,21 @@ done
 echo "========================================================="
 
 ```
+```ini
+=========================================================
+       FULL ROUND-TRIP NETWORK PERFORMANCE TESTER
+=========================================================
+Timestamp : sø. 13. sep. 02:58:39 +0200 2026
+---------------------------------------------------------
+Destination            | DNS Resolution | Total Connect 
+---------------------------------------------------------
+Reddit                 | 0.000584s  s | 0.002400s  s
+GitHub                 | 0.000519s  s | 0.025737s  s
+Google Search          | 0.000632s  s | 0.015769s  s
+Wikipedia              | 0.000534s  s | 0.024306s  s
+=========================================================
+
+```
 ### Network Latency Tester
 ```bash
 nano latency.ping.sh
@@ -80,7 +95,7 @@ declare -A TARGETS=(
 PING_COUNT=4
 
 echo "==============================================="
-echo "   MOBILE LATENCY & ROUTING IMPACT TESTER"
+echo "   NETWORK LATENCY & ROUTING IMPACT TESTER"
 echo "==============================================="
 echo "Timestamp : $(date)"
 echo "Ping Count: $PING_COUNT requests per destination"
@@ -103,6 +118,24 @@ for site in "${!TARGETS[@]}"; do
     fi
 done
 echo "==============================================="
+
+```
+```ini
+===============================================
+   NETWORK LATENCY & ROUTING IMPACT TESTER
+===============================================
+Ping Count: 4 requests per destination
+-----------------------------------------------
+Destination                    | Avg Latency 
+-----------------------------------------------
+Cloudflare DNS (1.1.1.1)       | 1.812  ms
+Quad9 DNS (9.9.9.9)            | 8.414  ms
+Reddit                         | 1.779  ms
+GitHub                         | 25.165 ms
+Google DNS (8.8.8.8)           | 7.857  ms
+Google Search                  | 15.716 ms
+Wikipedia                      | 23.607 ms
+===============================================
 
 ```
 ### Network Latency Breakdown
@@ -146,4 +179,46 @@ for site in "${!TARGETS[@]}"; do
 done
 echo "========================================================="
 
+```
+```ini
+=========================================================
+        ADVANCED NETWORK LAYER PERFORMANCE TESTER
+=========================================================
+--------------------------------------------
+ Reddit
+--------------------------------------------
+ DNS Lookup Time   : 0.000603s
+ TCP Handshake     : 0.002509s
+ TLS Key Exchange  : 0.025667s
+ Server Think Time : 0.028377s
+ Total Transaction : 0.028401s
+
+--------------------------------------------
+ GitHub
+--------------------------------------------
+ DNS Lookup Time   : 0.058692s
+ TCP Handshake     : 0.083911s
+ TLS Key Exchange  : 0.113016s
+ Server Think Time : 0.140020s
+ Total Transaction : 0.267743s
+
+--------------------------------------------
+ Google Search
+--------------------------------------------
+ DNS Lookup Time   : 0.000486s
+ TCP Handshake     : 0.015293s
+ TLS Key Exchange  : 0.043206s
+ Server Think Time : 0.073199s
+ Total Transaction : 0.073251s
+
+--------------------------------------------
+ Wikipedia
+--------------------------------------------
+ DNS Lookup Time   : 0.000496s
+ TCP Handshake     : 0.025653s
+ TLS Key Exchange  : 0.056960s
+ Server Think Time : 0.081953s
+ Total Transaction : 0.082008s
+ 
+=========================================================
 ```
